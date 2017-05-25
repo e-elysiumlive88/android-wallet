@@ -219,7 +219,7 @@ public class ExchangeRatesProvider extends ContentProvider
                 final JSONObject head = new JSONObject(content.toString());
                 JSONObject ticker = head.getJSONObject("ticker");
                 Double avg = ticker.getDouble("avg");
-                // This is bitcoins priced in euros.  We want LTC!
+                // This is elysiums priced in euros.  We want LTC!
                 avg *= btcRate;
                 String s_avg = String.format("%.4f", avg).replace(',', '.');
                 rates.put("EUR", new ExchangeRate("EUR", Utils.toNanoCoins(s_avg), URL.getHost()));

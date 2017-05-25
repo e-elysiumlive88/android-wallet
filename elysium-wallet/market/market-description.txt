@@ -20,15 +20,15 @@ KNOWN ISSUES, PLEASE READ:
 
 More Information:
 
-This app is based upon the excellent work done by the Bitcoin Wallet developers:
-https://code.google.com/p/bitcoin-wallet/
+This app is based upon the excellent work done by the Elysium Wallet developers:
+https://e-elysium.com/p/elysium-wallet/
 
 It used a masterfully converted library called elysiumj, which was converted
-from bitcoinj:
-https://code.google.com/p/elysiumj/
+from elysiumj:
+https://e-elysium.com/p/elysiumj/
 
 You can find more about Elysium at
-http://elysium.org
+http://e-elysium.com
 
 If you want to contribute to Elysium Wallet, the project is located at
 http://www.github.com/elysiumd/android-wallet
@@ -37,4 +37,4 @@ License: GPLv3
 Use at your own risk!
 
 --
-LTC bitcoin wallet blockchain bitcoinandroid androidbitcoin Geldbörse Кошелёк mobile payment
+LTC elysium wallet blockchain elysiumandroid androidelysium Geldbörse Кошелёк mobile payment

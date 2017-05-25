@@ -35,7 +35,7 @@ import static com.google.elysium.core.Utils.*;
  * the minting of new coins. A Transaction object corresponds to the equivalent in the Elysium C++ implementation.</p>
  *
  * <p>Transactions are the fundamental atoms of Elysium and have many powerful features. Read
- * <a href="http://code.google.com/p/elysiumj/wiki/WorkingWithTransactions">"Working with transactions"</a> in the
+ * <a href="http://e-elysium.com/p/elysiumj/wiki/WorkingWithTransactions">"Working with transactions"</a> in the
  * documentation to learn more about how to use this class.</p>
  *
  * <p>All Elysium transactions are at risk of being reversed, though the risk is much less than with traditional payment

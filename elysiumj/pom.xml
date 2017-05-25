@@ -15,7 +15,7 @@
 
   <name>elysiumj Parent</name>
   <description>Provides the common configuration for the ElysiumJ modules</description>
-  <url>http://code.google.com/p/elysiumj</url>
+  <url>http://e-elysium.com/p/elysiumj</url>
 
   <licenses>
     <license>
@@ -98,7 +98,7 @@
 
   <issueManagement>
     <system>Google Code</system>
-    <url>http://code.google.com/p/elysiumj/issues/list</url>
+    <url>http://e-elysium.com/p/elysiumj/issues/list</url>
   </issueManagement>
 
   <mailingLists>
@@ -109,7 +109,7 @@
   </mailingLists>
 
   <scm>
-    <url>http://code.google.com/p/elysiumj/source/checkout</url>
+    <url>http://e-elysium.com/p/elysiumj/source/checkout</url>
   </scm>
 
   <!-- Common build plugin configuration -->

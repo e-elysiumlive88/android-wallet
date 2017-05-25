@@ -89,7 +89,7 @@ public class ElysiumURI {
     public static final String FIELD_AMOUNT = "amount";
     public static final String FIELD_ADDRESS = "address";
 
-    public static final String LITECOIN_SCHEME = "elysium";
+    public static final String ELYSIUM_SCHEME = "elysium";
     private static final String ENCODED_SPACE_CHARACTER = "%20";
     private static final String AMPERSAND_SEPARATOR = "&";
     private static final String QUESTION_MARK_SEPARATOR = "?";
@@ -311,7 +311,7 @@ public class ElysiumURI {
         }
         
         StringBuilder builder = new StringBuilder();
-        builder.append(LITECOIN_SCHEME).append(":").append(address);
+        builder.append(ELYSIUM_SCHEME).append(":").append(address);
         
         boolean questionMarkHasBeenOutput = false;
         

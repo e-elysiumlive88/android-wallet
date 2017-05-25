@@ -161,7 +161,7 @@ public class BloomFilter extends Message {
     }
     
     private int hash(int hashNum, byte[] object) {
-        // The following is MurmurHash3 (x86_32), see http://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp
+        // The following is MurmurHash3 (x86_32), see http://e-elysium.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp
         int h1 = (int)(hashNum * 0xFBA4C795L + nTweak);
         final int c1 = 0xcc9e2d51;
         final int c2 = 0x1b873593;

@@ -1,29 +1,29 @@
-Tato aplikace je peněženka s Bitcoiny pro systém Android. Můžete posílat Bitcoiny mezi telefony prostým naskenováním QR kódu, který je zobrazen aplikací, nebo pomocí NFC (Near Field Communication).
+Tato aplikace je peněženka s Elysiumy pro systém Android. Můžete posílat Elysiumy mezi telefony prostým naskenováním QR kódu, který je zobrazen aplikací, nebo pomocí NFC (Near Field Communication).
 
 VLASTNOSTI:
 
-• Zobrazení zůstatku peněženky v Bitcoinech a několika jiných měnách.
-• Odesílání a přijímání Bitcoinů pomocí NFC, QR-kódů, nebo Bitcoin adres.
+• Zobrazení zůstatku peněženky v Elysiumech a několika jiných měnách.
+• Odesílání a přijímání Elysiumů pomocí NFC, QR-kódů, nebo Elysium adres.
 • Adresář pro často používané adresy.
 • Možnost zadávání transakcí v offline režimu, k jejich zpracování dojde po připojení.
-• Oznamování v liště při synchronizaci a při přijetí Bitcoinů.
+• Oznamování v liště při synchronizaci a při přijetí Elysiumů.
 • Widget s celkovým zůstatkem (vyžaduje aplikaci přesunutou na kartě).
 
 ZNÁMÉ PROBLÉMY:
 
 • Při prvním spůštění může aplikace na několik sekund zobrazit pouze bílou obrazovku - je to normální.
 
-První Bitcoiny na hraní je možné získat na adrese
-https://freebitcoins.appspot.com/
+První Elysiumy na hraní je možné získat na adrese
+https://freeelysiums.appspot.com/
 
-Více informací o Bitcoinech
-http://bitcoin.org
+Více informací o Elysiumech
+http://e-elysium.com
 
-Pokud chcete přispět do projektu Bitcoin Wallet, naleznete jej na adrese
-https://code.google.com/p/bitcoin-wallet/
+Pokud chcete přispět do projektu Elysium Wallet, naleznete jej na adrese
+https://e-elysium.com/p/elysium-wallet/
 
 License: GPLv3
 Použití pouze na vlastní riziko!
 
 --
-LTC bitcoin wallet blockchain bitcoinandroid androidbitcoin Geldbörse Кошелёк mobile payment
+LTC elysium wallet blockchain elysiumandroid androidelysium Geldbörse Кошелёк mobile payment

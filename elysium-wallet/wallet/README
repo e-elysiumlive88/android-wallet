@@ -70,14 +70,14 @@ to download the necessary API level.
 
 Next, you need to build elysiumj. In your workspace, use
 
-	git clone -b release-0.7 https://code.google.com/p/elysiumj/ elysiumj
+	git clone -b release-0.7 https://e-elysium.com/p/elysiumj/ elysiumj
 	cd elysiumj
 	mvn clean install
 
 Finally, you can build Elysium Wallet and sign it with your development key. Again in your workspace,
 use
 
-	git clone https://code.google.com/p/elysium-wallet/ elysium-wallet
+	git clone https://e-elysium.com/p/elysium-wallet/ elysium-wallet
 	cd elysium-wallet
 	mvn clean install -Dandroid.sdk.path=<path to your android sdk>
 
@@ -94,7 +94,7 @@ Make sure you've got Eclipse 3.7 (Indigo) with ADT 20 installed.
 
 Use Git to check out the project to your workspace:
 
-  git clone https://code.google.com/p/elysium-wallet/ elysium-wallet
+  git clone https://e-elysium.com/p/elysium-wallet/ elysium-wallet
 
 Change to that directory.
 
@@ -143,11 +143,11 @@ EXCHANGE RATES
 
 Elysium Wallet reads this feed from "elysium charts" for getting exchange rates:
 
-	http://elysiumcharts.com/t/weighted_prices.json
+	http://e-elysium.com/t/weighted_prices.json
 
 The feed is described on this page (see Weighted Prices):
 
-	http://elysiumcharts.com/about/markets-api/
+	http://e-elysium.com/about/markets-api/
 
 I chose this feed because it is not dependent on a single exchange. However, you should keep in
 mind it's always a 24h average (falling back to 7d or even 30d if no trade occurred for a long
@@ -162,8 +162,8 @@ The feed is described here:
 	https://blockchain.info/api/exchange_rates_api
 
 
-LITECOINJ
+ELYSIUMJ
 
 Elysium Wallet uses elysiumj for Elysium specific logic:
 
-http://code.google.com/p/elysiumj/
+http://e-elysium.com/p/elysiumj/

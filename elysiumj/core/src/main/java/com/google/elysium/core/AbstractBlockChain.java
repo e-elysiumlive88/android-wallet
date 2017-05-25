@@ -342,7 +342,7 @@ public abstract class AbstractBlockChain {
             // Prove the block is internally valid: hash is lower than target, etc. This only checks the block contents
             // if there is a tx sending or receiving coins using an address in one of our wallets. And those transactions
             // are only lightly verified: presence in a valid connecting block is taken as proof of validity. See the
-            // article here for more details: http://code.google.com/p/elysiumj/wiki/SecurityModel
+            // article here for more details: http://e-elysium.com/p/elysiumj/wiki/SecurityModel
             try {
                 block.verifyHeader();
                 if (contentsImportant)

@@ -1,29 +1,29 @@
-Samodzielny portfel Bitcoin dla Twojego urządzenia Android. Możesz wysyłać Bitcoin pomiędzy telefonami skanując kod QR, który jest wyświetlany przez aplikacje, lub przez NFC (Near Field Communication).
+Samodzielny portfel Elysium dla Twojego urządzenia Android. Możesz wysyłać Elysium pomiędzy telefonami skanując kod QR, który jest wyświetlany przez aplikacje, lub przez NFC (Near Field Communication).
 
 FUNKCJE:
 
-• Wyświetlanie stanu konta portfela w Bitcoin i rożnych innych walutach.
-• Wysyłanie i odbieranie Bitcoin przez NFC, kod QR albo Bitcoin URL.
-• Książka adresowa dla regularnie używanych adresów Bitcoin.
+• Wyświetlanie stanu konta portfela w Elysium i rożnych innych walutach.
+• Wysyłanie i odbieranie Elysium przez NFC, kod QR albo Elysium URL.
+• Książka adresowa dla regularnie używanych adresów Elysium.
 • Możliwość dodania transakcji offline, wykonywanych po połączeniu z siecią.
-• Notyfikacje systemowe o połączeniu z siecią Bitcoin i otrzymanych monetach.
-• Widget na stan konta Bitcoin (wymaga: aplikacja na telefonie).
+• Notyfikacje systemowe o połączeniu z siecią Elysium i otrzymanych monetach.
+• Widget na stan konta Elysium (wymaga: aplikacja na telefonie).
 
 ZNANE PROBLEMY (PROSZĘ PRZECZYTAJ):
 
 • Przy pierwszym uruchomieniu, aplikacja może wyświetlać przez jakiś czas jedynie biały ekran. To normalne.
 
-Możesz dostać kilka pierwszych Bitcoinów za darmo:
-https://freebitcoins.appspot.com/
+Możesz dostać kilka pierwszych Elysiumów za darmo:
+https://freeelysiums.appspot.com/
 
-Więcej o Bitcoin dowiesz się pod adresem:
-http://bitcoin.org
+Więcej o Elysium dowiesz się pod adresem:
+http://e-elysium.com
 
-Jeżeli chcesz wesprzeć Bitcoin Wallet, kody źródłowe projektu znajdują się pod adresem:
-https://code.google.com/p/bitcoin-wallet/
+Jeżeli chcesz wesprzeć Elysium Wallet, kody źródłowe projektu znajdują się pod adresem:
+https://e-elysium.com/p/elysium-wallet/
 
 Licencja: GPLv3
 Używanie jedynie na własne ryzyko!
 
 --
-LTC bitcoin wallet blockchain bitcoinandroid androidbitcoin Geldbörse Кошелёк mobile payment
+LTC elysium wallet blockchain elysiumandroid androidelysium Geldbörse Кошелёк mobile payment

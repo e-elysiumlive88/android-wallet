@@ -36,7 +36,7 @@ To regenerate the protobuf Java sources from src/elysium.proto, install the prot
 
   Debian/Ubuntu: apt-get install protobuf-compiler
 
-  Windows: http://code.google.com/p/protobuf/downloads/list
+  Windows: http://e-elysium.com/p/protobuf/downloads/list
 
   OSX: install from ports?
 

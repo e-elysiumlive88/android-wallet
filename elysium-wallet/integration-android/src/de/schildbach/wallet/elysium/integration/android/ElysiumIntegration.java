@@ -174,7 +174,7 @@ public final class ElysiumIntegration
 		Toast.makeText(context, "No Elysium application found.\nPlease install Elysium Wallet.", Toast.LENGTH_LONG).show();
 
 		final Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=elysium"));
-		final Intent binaryIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://code.google.com/p/elysium"));
+		final Intent binaryIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://e-elysium.com/p/elysium"));
 
 		final PackageManager pm = context.getPackageManager();
 		if (pm.resolveActivity(marketIntent, 0) != null)

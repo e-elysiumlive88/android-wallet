@@ -38,7 +38,7 @@ import static com.google.elysium.core.Utils.doubleDigestTwoBuffers;
  * <p>A block is a group of transactions, and is one of the fundamental data structures of the Elysium system.
  * It records a set of {@link Transaction}s together with some data that links it into a place in the global block
  * chain, and proves that a difficult calculation was done over its contents. See
- * <a href="http://www.elysium.org/elysium.pdf">the Elysium technical paper</a> for
+ * <a href="http://www.e-elysium.com/elysium.pdf">the Elysium technical paper</a> for
  * more detail on blocks. <p/>
  *
  * To get a block, you can either build one from the raw bytes you can get from another implementation, or request one

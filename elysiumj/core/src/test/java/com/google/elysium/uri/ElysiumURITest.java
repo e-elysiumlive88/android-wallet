@@ -95,7 +95,7 @@ public class ElysiumURITest {
      */
     @Test
     public void testGood_Simple() throws ElysiumURIParseException {
-        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS);
+        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS);
         assertNotNull(testObject);
         assertNull("Unexpected amount", testObject.getAmount());
         assertNull("Unexpected label", testObject.getLabel());
@@ -121,14 +121,14 @@ public class ElysiumURITest {
     public void testBad_BadSyntax() {
         // Various illegal characters
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + "|" + PRODNET_GOOD_ADDRESS);
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + "|" + PRODNET_GOOD_ADDRESS);
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
             assertTrue(e.getMessage().contains("Bad URI syntax"));
         }
 
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS + "\\");
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS + "\\");
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
             assertTrue(e.getMessage().contains("Bad URI syntax"));
@@ -136,7 +136,7 @@ public class ElysiumURITest {
 
         // Separator without field
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":");
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":");
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
             assertTrue(e.getMessage().contains("Bad URI syntax"));
@@ -149,7 +149,7 @@ public class ElysiumURITest {
     @Test
     public void testBad_Address() {
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME);
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME);
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
         }
@@ -161,7 +161,7 @@ public class ElysiumURITest {
     @Test
     public void testBad_IncorrectAddressType() {
         try {
-            testObject = new ElysiumURI(NetworkParameters.testNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS);
+            testObject = new ElysiumURI(NetworkParameters.testNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS);
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
             assertTrue(e.getMessage().contains("Bad address"));
@@ -177,17 +177,17 @@ public class ElysiumURITest {
     @Test
     public void testGood_Amount() throws ElysiumURIParseException {
         // Test the decimal parsing
-        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                 + "?amount=9876543210.12345678");
         assertEquals("987654321012345678", testObject.getAmount().toString());
 
         // Test the decimal parsing
-        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                 + "?amount=.12345678");
         assertEquals("12345678", testObject.getAmount().toString());
 
         // Test the integer parsing
-        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                 + "?amount=9876543210");
         assertEquals("987654321000000000", testObject.getAmount().toString());
     }
@@ -200,7 +200,7 @@ public class ElysiumURITest {
      */
     @Test
     public void testGood_Label() throws ElysiumURIParseException {
-        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                 + "?label=Hello%20World");
         assertEquals("Hello World", testObject.getLabel());
     }
@@ -216,7 +216,7 @@ public class ElysiumURITest {
     public void testGood_LabelWithAmpersandAndPlus() throws ElysiumURIParseException, UnsupportedEncodingException {
         String testString = "Hello Earth & Mars + Venus";
         String encodedLabel = ElysiumURI.encodeURLString(testString);
-        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS + "?label="
+        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS + "?label="
                 + encodedLabel);
         assertEquals(testString, testObject.getLabel());
     }
@@ -233,7 +233,7 @@ public class ElysiumURITest {
         // Moscow in Russian in Cyrillic
         String moscowString = "\u041c\u043e\u0441\u043a\u0432\u0430";
         String encodedLabel = ElysiumURI.encodeURLString(moscowString);
-        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS + "?label="
+        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS + "?label="
                 + encodedLabel);
         assertEquals(moscowString, testObject.getLabel());
     }
@@ -246,7 +246,7 @@ public class ElysiumURITest {
      */
     @Test
     public void testGood_Message() throws ElysiumURIParseException {
-        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                 + "?message=Hello%20World");
         assertEquals("Hello World", testObject.getMessage());
     }
@@ -259,7 +259,7 @@ public class ElysiumURITest {
      */
     @Test
     public void testGood_Combinations() throws ElysiumURIParseException {
-        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                 + "?amount=9876543210&label=Hello%20World&message=Be%20well");
         assertEquals(
                 "ElysiumURI['address'='LQz2pJYaeqntA9BFB8rDX5AL2TTKGd5AuN','amount'='987654321000000000','label'='Hello World','message'='Be well']",
@@ -276,7 +276,7 @@ public class ElysiumURITest {
     public void testBad_Amount() throws ElysiumURIParseException {
         // Missing
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                     + "?amount=");
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
@@ -285,7 +285,7 @@ public class ElysiumURITest {
 
         // Non-decimal (BIP 21)
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                     + "?amount=12X4");
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
@@ -302,7 +302,7 @@ public class ElysiumURITest {
     @Test
     public void testBad_Label() throws ElysiumURIParseException {
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                     + "?label=");
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
@@ -319,7 +319,7 @@ public class ElysiumURITest {
     @Test
     public void testBad_Message() throws ElysiumURIParseException {
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                     + "?message=");
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
@@ -336,7 +336,7 @@ public class ElysiumURITest {
     @Test
     public void testBad_Duplicated() throws ElysiumURIParseException {
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                     + "?address=aardvark");
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
@@ -353,7 +353,7 @@ public class ElysiumURITest {
     @Test
     public void testBad_TooManyEquals() throws ElysiumURIParseException {
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                     + "?label=aardvark=zebra");
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
@@ -370,7 +370,7 @@ public class ElysiumURITest {
     @Test
     public void testBad_TooManyQuestionMarks() throws ElysiumURIParseException {
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                     + "?label=aardvark?message=zebra");
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
@@ -387,7 +387,7 @@ public class ElysiumURITest {
     @Test
     public void testUnknown() throws ElysiumURIParseException {
         // Unknown not required field
-        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+        testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                 + "?aardvark=true");
         assertEquals("ElysiumURI['address'='LQz2pJYaeqntA9BFB8rDX5AL2TTKGd5AuN','aardvark'='true']", testObject.toString());
 
@@ -395,7 +395,7 @@ public class ElysiumURITest {
 
         // Unknown not required field (isolated)
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                     + "?aardvark");
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {
@@ -404,7 +404,7 @@ public class ElysiumURITest {
 
         // Unknown and required field
         try {
-            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.LITECOIN_SCHEME + ":" + PRODNET_GOOD_ADDRESS
+            testObject = new ElysiumURI(NetworkParameters.prodNet(), ElysiumURI.ELYSIUM_SCHEME + ":" + PRODNET_GOOD_ADDRESS
                     + "?req-aardvark=true");
             fail("Expecting ElysiumURIParseException");
         } catch (ElysiumURIParseException e) {

@@ -72,8 +72,8 @@ public class Constants
 	public static final String PEER_DISCOVERY_IRC_CHANNEL_PROD = "#elysium";
 	public static final String PEER_DISCOVERY_IRC_CHANNEL_TEST = "#elysiumTEST3";
 
-	private static final String BLOCKEXPLORER_BASE_URL_PROD = "http://explorer.elysium.net/";
-	private static final String BLOCKEXPLORER_BASE_URL_TEST = "http://explorer.elysium.net/";
+	private static final String BLOCKEXPLORER_BASE_URL_PROD = "http://explorer.e-elysium.com/";
+	private static final String BLOCKEXPLORER_BASE_URL_TEST = "http://explorer.e-elysium.com/";
 	public static final String BLOCKEXPLORER_BASE_URL = TEST ? BLOCKEXPLORER_BASE_URL_TEST : BLOCKEXPLORER_BASE_URL_PROD;
 
 	public static final String MIMETYPE_TRANSACTION = "application/x-ltctx";
@@ -86,7 +86,7 @@ public class Constants
 	public static final long BLOCKCHAIN_STATE_BROADCAST_THROTTLE_MS = DateUtils.SECOND_IN_MILLIS;
 	public static final long BLOCKCHAIN_UPTODATE_THRESHOLD_MS = DateUtils.HOUR_IN_MILLIS;
 
-	public static final String CURRENCY_CODE_LITECOIN = "ELSM";
+	public static final String CURRENCY_CODE_ELYSIUM = "ELSM";
 	public static final char CHAR_HAIR_SPACE = '\u200a';
 	public static final char CHAR_THIN_SPACE = '\u2009';
 	public static final char CHAR_ALMOST_EQUAL_TO = '\u2248';
@@ -107,8 +107,8 @@ public class Constants
 	public static final String LICENSE_URL = "MIT License";
 	public static final String SOURCE_URL = "https://github.com/elysiumd/android-wallet";
 	public static final String BINARY_URL = "https://github.com/elysiumd/android-wallet";
-	public static final String CREDITS_LITECOINJ_URL = "http://code.google.com/";
-	public static final String CREDITS_ZXING_URL = "http://code.google.com/p/zxing/";
+	public static final String CREDITS_ELYSIUMJ_URL = "http://e-elysium.com/";
+	public static final String CREDITS_ZXING_URL = "http://e-elysium.com/p/zxing/";
 	public static final String CREDITS_ICON_URL = "Scalable Vector Graphics";
 	public static final String AUTHOR_TWITTER_URL = "https://twitter.com/#!/elysium";
 	public static final String AUTHOR_GOOGLEPLUS_URL = "https://profiles.google.com/elysium";

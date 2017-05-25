@@ -99,7 +99,7 @@ public class Constants
 	public static final int LTC_PRECISION = 8;
 	public static final int LOCAL_PRECISION = 4;
 
-	public static final String DONATION_ADDRESS = "rAziX59NX5vKmX3h6uidyGPoad3DV4Jjuu";
+	public static final String DONATION_ADDRESS = "rKgBd5ErBqGLCGGeN15aGmFCy7EWJ3m7DH";
 	public static final String REPORT_EMAIL = "ralree@gmail.com";
 	public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
 	public static final String REPORT_SUBJECT_CRASH = "Crash report";

@@ -76,7 +76,7 @@ public class Constants
 	private static final String BLOCKEXPLORER_BASE_URL_TEST = "http://explorer.e-elysium.com/";
 	public static final String BLOCKEXPLORER_BASE_URL = TEST ? BLOCKEXPLORER_BASE_URL_TEST : BLOCKEXPLORER_BASE_URL_PROD;
 
-	public static final String MIMETYPE_TRANSACTION = "application/x-ltctx";
+	public static final String MIMETYPE_TRANSACTION = "application/x-elsmtx";
 
 	public static final int MAX_NUM_CONFIRMATIONS = 7;
 	public static final String USER_AGENT = "Elysium Wallet";

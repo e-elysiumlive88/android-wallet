@@ -20,6 +20,9 @@ package de.schildbach.wallet.elysium.ui;
 import java.util.ArrayList;
 import java.util.List;
 
+//
+import java.math.BigInteger;
+
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -178,6 +181,10 @@ public final class BlockListFragment extends SherlockListFragment implements Loa
 			return true;
 		}
 
+
+
+
+
 		public View getView(final int position, View row, final ViewGroup parent)
 		{
 			if (row == null)
@@ -185,6 +192,10 @@ public final class BlockListFragment extends SherlockListFragment implements Loa
 
 			final StoredBlock storedBlock = getItem(position);
 			final Block header = storedBlock.getHeader();
+
+			//
+
+			if(header.getDifficultyTargetAsInteger().toString().equals("0")) return row;
 
 			final TextView rowHeight = (TextView) row.findViewById(R.id.block_list_row_height);
 			final int height = storedBlock.getHeight();

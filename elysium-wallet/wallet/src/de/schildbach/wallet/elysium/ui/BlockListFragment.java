@@ -194,9 +194,12 @@ public final class BlockListFragment extends SherlockListFragment implements Loa
 			final Block header = storedBlock.getHeader();
 
 			//
-
+try
+{
 			if(header.getDifficultyTargetAsInteger().toString().equals("0")) return row;
-
+}
+catch(Exception ex)
+{}
 			final TextView rowHeight = (TextView) row.findViewById(R.id.block_list_row_height);
 			final int height = storedBlock.getHeight();
 			rowHeight.setText(Integer.toString(height));

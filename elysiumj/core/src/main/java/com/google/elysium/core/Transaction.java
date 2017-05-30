@@ -59,7 +59,7 @@ public class Transaction extends ChildMessage implements Serializable {
     private long version;
     private ArrayList<TransactionInput> inputs;
 
-    private ArrayList<TransactionOutput> outputs;
+    public ArrayList<TransactionOutput> outputs;
 
     private long lockTime;
 

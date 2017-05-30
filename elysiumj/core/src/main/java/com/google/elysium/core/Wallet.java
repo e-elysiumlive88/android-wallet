@@ -2171,10 +2171,18 @@ public class Wallet implements Serializable, BlockChainListener {
      * Returns the balance of this wallet as calculated by the provided balanceType.
      */
     public BigInteger getBalance(BalanceType balanceType) {
+
+
+/////debug
+//return BigInteger.valueOf(999999999);
+
+
         lock.lock();
         try {
             if (balanceType == BalanceType.AVAILABLE) {
                 return getBalance(coinSelector);
+
+
             } else if (balanceType == BalanceType.ESTIMATED) {
                 LinkedList<TransactionOutput> all = calculateSpendCandidates(false);
                 BigInteger value = BigInteger.ZERO;
@@ -2185,7 +2193,11 @@ public class Wallet implements Serializable, BlockChainListener {
             }
         } finally {
             lock.unlock();
-        }
+ 
+      }
+
+
+
     }
 
     /**

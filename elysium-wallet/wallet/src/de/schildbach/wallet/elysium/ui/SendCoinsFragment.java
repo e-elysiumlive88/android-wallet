@@ -116,6 +116,11 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 
 	private static final int REQUEST_CODE_SCAN = 0;
 
+
+
+
+
+
 	private enum State
 	{
 		INPUT, PREPARATION, SENDING, SENT, FAILED
@@ -589,17 +594,28 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 			final BigInteger pending = estimated.subtract(available);
 			// TODO subscribe to wallet changes
 
+
+
+
+
 			final BigInteger availableAfterAmount = available.subtract(amount);
 			final boolean enoughFundsForAmount = availableAfterAmount.signum() >= 0;
+
+
 
 			if (enoughFundsForAmount)
 			{
 				final BigInteger fee = feeView.getAmount();
 				final boolean validFee = fee != null && fee.signum() >= 0;
 
+
+
+
 				if (validFee)
 				{
 					final boolean enoughFunds = availableAfterAmount.subtract(fee).signum() >= 0;
+
+
 
 					if (enoughFunds)
 					{
@@ -610,7 +626,11 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 					{
 						// not enough funds for fee
 						if (popups)
+						{	
+							
+
 							popupAvailable(feeView, availableAfterAmount, pending);
+						}
 					}
 				}
 				else
@@ -623,8 +643,13 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 			else
 			{
 				// not enough funds for amount
+
+
 				if (popups)
+				{
 					popupAvailable(amountView, available, pending);
+
+				}
 			}
 		}
 		else
@@ -682,6 +707,9 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 		}
 	}
 
+
+
+
 	private void handleGo()
 	{
 		state = State.PREPARATION;
@@ -718,6 +746,8 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
                 BigInteger nMinFee = Constants.DEFAULT_TX_FEE;
                 BigInteger multiplicand = new BigInteger(Integer.toString(1 + txSize / 1000));
                 BigInteger nPayFee = nTransactionFee.multiply(multiplicand);
+
+
                 if(sendRequest.fee.compareTo(nPayFee.max(nMinFee)) < 0)
                 {
                     Log.i("ElysiumSendCoins", "Recalculated fee: " +

@@ -118,10 +118,10 @@ public final class WalletBalanceFragment extends Fragment
 		viewBalance = (CurrencyTextView) view.findViewById(R.id.wallet_balance);
 		viewBalance.setPrefix(Constants.CURRENCY_CODE_ELYSIUM);
 
-		viewBalanceLocal = (CurrencyTextView) view.findViewById(R.id.wallet_balance_local);
-		viewBalanceLocal.setPrecision(Constants.LOCAL_PRECISION);
-		viewBalanceLocal.setInsignificantRelativeSize(1);
-		viewBalanceLocal.setStrikeThru(Constants.TEST);
+		//viewBalanceLocal = (CurrencyTextView) view.findViewById(R.id.wallet_balance_local);
+		//viewBalanceLocal.setPrecision(Constants.LOCAL_PRECISION);
+		//viewBalanceLocal.setInsignificantRelativeSize(1);
+		//viewBalanceLocal.setStrikeThru(Constants.TEST);
 	}
 
 	@Override
@@ -146,8 +146,8 @@ public final class WalletBalanceFragment extends Fragment
 
 	private void updateView()
 	{
-		if (!showLocalBalance)
-			viewBalanceLocal.setVisibility(View.GONE);
+		//if (!showLocalBalance)
+			//viewBalanceLocal.setVisibility(View.GONE);
 
 		if (balance != null)
 		{
@@ -160,14 +160,14 @@ public final class WalletBalanceFragment extends Fragment
 				if (exchangeRate != null)
 				{
 					final BigInteger localValue = WalletUtils.localValue(balance, exchangeRate.rate);
-					viewBalanceLocal.setVisibility(View.VISIBLE);
-					viewBalanceLocal.setPrefix(Constants.PREFIX_ALMOST_EQUAL_TO + exchangeRate.currencyCode);
-					viewBalanceLocal.setAmount(localValue);
-					viewBalanceLocal.setTextColor(getResources().getColor(R.color.fg_less_significant));
+					//viewBalanceLocal.setVisibility(View.VISIBLE);
+					//viewBalanceLocal.setPrefix(Constants.PREFIX_ALMOST_EQUAL_TO + exchangeRate.currencyCode);
+					//viewBalanceLocal.setAmount(localValue);
+					//viewBalanceLocal.setTextColor(getResources().getColor(R.color.fg_less_significant));
 				}
 				else
 				{
-					viewBalanceLocal.setVisibility(View.INVISIBLE);
+					//viewBalanceLocal.setVisibility(View.INVISIBLE);
 				}
 			}
 		}

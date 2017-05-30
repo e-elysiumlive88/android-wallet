@@ -132,7 +132,7 @@ public final class WalletActivity extends AbstractWalletActivity
         for (PackageInfo pi : packages) {
             if(pi.packageName.equals("de.schildbach.wallet_ltc") &&
                     pi.versionCode >= 150) {
-                // This is the new LTC wallet
+                // This is the new ELSM wallet
                 // Since it's installed, the next action after backup is
                 // import.
                 haveNewWallet = true;

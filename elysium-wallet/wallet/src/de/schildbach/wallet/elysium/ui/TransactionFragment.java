@@ -133,12 +133,15 @@ public final class TransactionFragment extends SherlockFragment
 
 		try
 		{
-			final BigInteger amountSent = tx.getValueSentFromMe(wallet);
+			//final BigInteger amountSent = tx.getValueSentFromMe(wallet);
+			final BigInteger amountSent = tx.getValue(wallet);
 			view.findViewById(R.id.transaction_fragment_amount_sent_row).setVisibility(amountSent.signum() != 0 ? View.VISIBLE : View.GONE);
-			if (amountSent.signum() != 0)
+			if (amountSent.signum() == -1)
+			
 			{
 				final TextView viewAmountSent = (TextView) view.findViewById(R.id.transaction_fragment_amount_sent);
-				viewAmountSent.setText(Constants.CURRENCY_MINUS_SIGN + WalletUtils.formatValue(amountSent, Constants.LTC_PRECISION));
+				//viewAmountSent.setText(Constants.CURRENCY_MINUS_SIGN + WalletUtils.formatValue(amountSent, Constants.ELSM_PRECISION));
+				viewAmountSent.setText(WalletUtils.formatValue(amountSent, Constants.ELSM_PRECISION));
 			}
 		}
 		catch (final ScriptException x)
@@ -146,13 +149,23 @@ public final class TransactionFragment extends SherlockFragment
 			x.printStackTrace();
 		}
 
-		final BigInteger amountReceived = tx.getValueSentToMe(wallet);
+		//final BigInteger amountReceived = tx.getValueSentToMe(wallet);
+		
+		try {
+		final BigInteger amountReceived = tx.getValue(wallet);
+		
+
 		view.findViewById(R.id.transaction_fragment_amount_received_row).setVisibility(amountReceived.signum() != 0 ? View.VISIBLE : View.GONE);
-		if (amountReceived.signum() != 0)
+		if (amountReceived.signum() == 1)
+		
 		{
 			final TextView viewAmountReceived = (TextView) view.findViewById(R.id.transaction_fragment_amount_received);
-			viewAmountReceived.setText(Constants.CURRENCY_PLUS_SIGN + WalletUtils.formatValue(amountReceived, Constants.LTC_PRECISION));
+			//viewAmountReceived.setText(Constants.CURRENCY_PLUS_SIGN + WalletUtils.formatValue(amountReceived, Constants.ELSM_PRECISION));
+			viewAmountReceived.setText(WalletUtils.formatValue(amountReceived, Constants.ELSM_PRECISION));
 		}
+
+		} catch(Exception ex){}
+
 
 		final View viewFromButton = view.findViewById(R.id.transaction_fragment_from_button);
 		final TextView viewFromLabel = (TextView) view.findViewById(R.id.transaction_fragment_from_label);

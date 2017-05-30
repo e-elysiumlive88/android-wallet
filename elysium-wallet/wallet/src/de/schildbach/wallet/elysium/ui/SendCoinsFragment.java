@@ -404,7 +404,7 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 
 				final AlertDialog.Builder dialog = new AlertDialog.Builder(activity);
 				dialog.setMessage(getString(R.string.send_coins_dialog_fee_message,
-						Constants.CURRENCY_CODE_ELYSIUM + " " + WalletUtils.formatValue(Constants.DEFAULT_TX_FEE, Constants.LTC_PRECISION)));
+						Constants.CURRENCY_CODE_ELYSIUM + " " + WalletUtils.formatValue(Constants.DEFAULT_TX_FEE, Constants.ELSM_PRECISION)));
 				if (allowLowFee)
 				{
 					dialog.setPositiveButton(R.string.send_coins_dialog_fee_button_send, new DialogInterface.OnClickListener()
@@ -682,7 +682,7 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 
 		final TextView viewPending = (TextView) popupAvailableView.findViewById(R.id.send_coins_popup_available_pending);
 		viewPending.setVisibility(pending.signum() > 0 ? View.VISIBLE : View.GONE);
-		viewPending.setText(getString(R.string.send_coins_fragment_pending, WalletUtils.formatValue(pending, Constants.LTC_PRECISION)));
+		viewPending.setText(getString(R.string.send_coins_fragment_pending, WalletUtils.formatValue(pending, Constants.ELSM_PRECISION)));
 
 		popup(anchor, popupAvailableView);
 	}
@@ -918,8 +918,8 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 		if (sentTransaction != null)
 		{
 			sentTransactionView.setVisibility(View.VISIBLE);
-			sentTransactionListAdapter.setPrecision(Integer.parseInt(prefs.getString(Constants.PREFS_KEY_LTC_PRECISION,
-					Integer.toString(Constants.LTC_PRECISION))));
+			sentTransactionListAdapter.setPrecision(Integer.parseInt(prefs.getString(Constants.PREFS_KEY_ELSM_PRECISION,
+					Integer.toString(Constants.ELSM_PRECISION))));
 			sentTransactionListAdapter.replace(sentTransaction);
 		}
 		else

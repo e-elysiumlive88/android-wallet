@@ -152,7 +152,7 @@ public final class WalletBalanceFragment extends Fragment
 		if (balance != null)
 		{
 			viewBalance.setVisibility(View.VISIBLE);
-			viewBalance.setPrecision(Integer.parseInt(prefs.getString(Constants.PREFS_KEY_LTC_PRECISION, Integer.toString(Constants.LTC_PRECISION))));
+			viewBalance.setPrecision(Integer.parseInt(prefs.getString(Constants.PREFS_KEY_ELSM_PRECISION, Integer.toString(Constants.ELSM_PRECISION))));
 			viewBalance.setAmount(balance);
 
 			if (showLocalBalance)

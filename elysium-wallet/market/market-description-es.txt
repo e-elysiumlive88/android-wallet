@@ -26,4 +26,4 @@ Licencia: GPLv3
 ¡Úsalo bajo tu propia responsabilidad!
 
 --
-LTC elysium wallet blockchain elysiumandroid androidelysium Geldbörse Кошелёк mobile payment
+ELSM elysium wallet blockchain elysiumandroid androidelysium Geldbörse Кошелёк mobile payment

@@ -173,7 +173,7 @@ public class ExchangeRatesProvider extends ContentProvider
         Double btcRate = 0.0;
 		try {
             String currencies[] = {"USD", "BTC", "RUR"};
-            String urls[] = {"https://btc-e.com/api/2/14/ticker", "https://btc-e.com/api/2/10/ticker", "https://btc-e.com/api/2/ltc_rur/ticker"};
+            String urls[] = {"https://btc-e.com/api/2/14/ticker", "https://btc-e.com/api/2/10/ticker", "https://btc-e.com/api/2/elsm_rur/ticker"};
             for(int i = 0; i < currencies.length; ++i) {
                 final String currencyCode = currencies[i];
                 final URL URL = new URL(urls[i]);

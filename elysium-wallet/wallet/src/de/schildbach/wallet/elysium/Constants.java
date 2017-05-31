@@ -134,7 +134,7 @@ public class Constants
 	public static final String PREFS_KEY_LABS_SEND_COINS_LOW_FEE = "labs_send_coins_low_fee";
 	public static final String PREFS_KEY_LABS_TRANSACTION_DETAILS = "labs_transactions_details";
 	public static final String PREFS_KEY_LABS_BLOCK_EXPLORER = "labs_block_explorer";
-	public static final String PREFS_KEY_ELSM_PRECISION = "ltc_precision";
+	public static final String PREFS_KEY_ELSM_PRECISION = "elsm_precision";
 	public static final String PREFS_KEY_DISCLAIMER = "disclaimer";
 
 	public static final BigInteger DEFAULT_TX_FEE = Utils.CENT.multiply(new BigInteger("2")); // 0.02

@@ -941,8 +941,8 @@ containing a value of this type.
         public static final int address_book_row_created=0x7f0a002b;
         public static final int address_book_row_label=0x7f0a002a;
         public static final int amount_calculator_rate=0x7f0a0031;
+        public static final int amount_calculator_row_elsm=0x7f0a002f;
         public static final int amount_calculator_row_local=0x7f0a0030;
-        public static final int amount_calculator_row_ltc=0x7f0a002f;
         public static final int bitmap_dialog_image=0x7f0a0032;
         public static final int block_list_row_hash=0x7f0a0036;
         public static final int block_list_row_height=0x7f0a0034;

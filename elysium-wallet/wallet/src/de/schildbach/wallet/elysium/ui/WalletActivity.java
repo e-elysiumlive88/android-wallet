@@ -130,7 +130,7 @@ public final class WalletActivity extends AbstractWalletActivity
         PackageManager pm = getPackageManager();
         List<PackageInfo> packages = pm.getInstalledPackages(0);
         for (PackageInfo pi : packages) {
-            if(pi.packageName.equals("de.schildbach.wallet_ltc") &&
+            if(pi.packageName.equals("de.schildbach.wallet_elsm") &&
                     pi.versionCode >= 150) {
                 // This is the new ELSM wallet
                 // Since it's installed, the next action after backup is

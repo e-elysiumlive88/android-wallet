@@ -59,14 +59,14 @@ public final class AboutActivity extends SherlockPreferenceActivity
 		actionBar.setDisplayHomeAsUpEnabled(true);
 
 		findPreference(KEY_ABOUT_VERSION).setSummary(((WalletApplication) getApplication()).applicationVersionName());
-		findPreference(KEY_ABOUT_LICENSE).setSummary(Constants.LICENSE_URL);
-		findPreference(KEY_ABOUT_SOURCE).setSummary(Constants.SOURCE_URL);
-		findPreference(KEY_ABOUT_CREDITS_ELYSIUMJ).setTitle(getString(R.string.about_credits_elysiumj_title, VersionMessage.ELYSIUMJ_VERSION));
-		findPreference(KEY_ABOUT_CREDITS_ELYSIUMJ).setSummary(Constants.CREDITS_ELYSIUMJ_URL);
-		findPreference(KEY_ABOUT_CREDITS_ZXING).setSummary(Constants.CREDITS_ZXING_URL);
-		findPreference(KEY_ABOUT_CREDITS_ICON).setSummary(Constants.CREDITS_ICON_URL);
-		findPreference(KEY_ABOUT_MARKET_APP).setSummary(String.format(Constants.MARKET_APP_URL, getPackageName()));
-		findPreference(KEY_ABOUT_MARKET_PUBLISHER).setSummary(Constants.MARKET_PUBLISHER_URL);
+		//findPreference(KEY_ABOUT_LICENSE).setSummary(Constants.LICENSE_URL);
+		//findPreference(KEY_ABOUT_SOURCE).setSummary(Constants.SOURCE_URL);
+		//findPreference(KEY_ABOUT_CREDITS_ELYSIUMJ).setTitle(getString(R.string.about_credits_elysiumj_title, VersionMessage.ELYSIUMJ_VERSION));
+		//findPreference(KEY_ABOUT_CREDITS_ELYSIUMJ).setSummary(Constants.CREDITS_ELYSIUMJ_URL);
+		//findPreference(KEY_ABOUT_CREDITS_ZXING).setSummary(Constants.CREDITS_ZXING_URL);
+		//findPreference(KEY_ABOUT_CREDITS_ICON).setSummary(Constants.CREDITS_ICON_URL);
+		//findPreference(KEY_ABOUT_MARKET_APP).setSummary(String.format(Constants.MARKET_APP_URL, getPackageName()));
+		//findPreference(KEY_ABOUT_MARKET_PUBLISHER).setSummary(Constants.MARKET_PUBLISHER_URL);
 	}
 
 	@Override
@@ -86,32 +86,32 @@ public final class AboutActivity extends SherlockPreferenceActivity
 	public boolean onPreferenceTreeClick(final PreferenceScreen preferenceScreen, final Preference preference)
 	{
 		final String key = preference.getKey();
-		if (KEY_ABOUT_LICENSE.equals(key))
+		/*if (KEY_ABOUT_LICENSE.equals(key))
 		{
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.LICENSE_URL)));
 			finish();
-		}
-		else if (KEY_ABOUT_SOURCE.equals(key))
+		}*/
+		/*else if (KEY_ABOUT_SOURCE.equals(key))
 		{
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.SOURCE_URL)));
 			finish();
-		}
-		else if (KEY_ABOUT_CREDITS_ELYSIUMJ.equals(key))
+		}*/
+		/*else if (KEY_ABOUT_CREDITS_ELYSIUMJ.equals(key))
 		{
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.CREDITS_ELYSIUMJ_URL)));
 			finish();
-		}
-		else if (KEY_ABOUT_CREDITS_ZXING.equals(key))
+		}*/
+		/*else if (KEY_ABOUT_CREDITS_ZXING.equals(key))
 		{
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.CREDITS_ZXING_URL)));
 			finish();
-		}
-		else if (KEY_ABOUT_CREDITS_ICON.equals(key))
+		}*/
+		/*else if (KEY_ABOUT_CREDITS_ICON.equals(key))
 		{
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.CREDITS_ICON_URL)));
 			finish();
-		}
-		else if (KEY_ABOUT_AUTHOR_TWITTER.equals(key))
+		}*/
+		/*else if (KEY_ABOUT_AUTHOR_TWITTER.equals(key))
 		{
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.AUTHOR_TWITTER_URL)));
 			finish();
@@ -129,12 +129,13 @@ public final class AboutActivity extends SherlockPreferenceActivity
 			else
 				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(String.format(Constants.WEBMARKET_APP_URL, getPackageName()))));
 			finish();
-		}
-		else if (KEY_ABOUT_MARKET_PUBLISHER.equals(key))
+		}*/
+
+		/*else if (KEY_ABOUT_MARKET_PUBLISHER.equals(key))
 		{
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.MARKET_PUBLISHER_URL)));
 			finish();
-		}
+		}*/
 
 		return false;
 	}

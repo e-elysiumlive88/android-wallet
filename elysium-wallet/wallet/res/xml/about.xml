@@ -6,22 +6,22 @@
 			android:key="about_version"
 			android:title="Version" />
 		<Preference
-			android:summary="© 2011-2013, Erik Gregg"
+			android:summary="© 2011-207, Erik Greg, Elysium Developers"
 			android:title="Copyright" />
-		<Preference
+		<!--Preference
 			android:key="about_license"
-			android:title="@string/about_license_title" />
-		<Preference
+			android:title="@string/about_license_title" /-->
+		<!--Preference
 			android:key="about_source"
-			android:title="Source Code" />
-		<Preference android:key="about_credits_elysiumj" />
-		<Preference
+			android:title="Source Code" /-->
+		<!--Preference android:key="about_credits_elysiumj" /-->
+		<!--Preference
 			android:key="about_credits_zxing"
-			android:title="@string/about_credits_zxing_title" />
-		<Preference
+			android:title="@string/about_credits_zxing_title" /-->
+		<!--Preference
 			android:key="about_credits_icon"
-			android:title="@string/about_credits_icon_title" />
-		<Preference
+			android:title="@string/about_credits_icon_title" /-->
+		<!--Preference
 			android:key="about_author_twitter"
 			android:summary="\@elysium_wallet"
 			android:title="@string/about_author_twitter_title" />
@@ -31,10 +31,10 @@
 			android:title="@string/about_author_googleplus_title" />
 		<Preference
 			android:key="about_market_app"
-			android:title="http://play.google.com" />
-		<Preference
+			android:title="http://play.google.com" /-->
+		<!--Preference
 			android:key="about_market_publisher"
-			android:title="@string/about_credits_market_publisher_title" />
+			android:title="@string/about_credits_market_publisher_title" /-->
 	</PreferenceCategory>
 
 </PreferenceScreen>

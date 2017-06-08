@@ -1,0 +1,6 @@
+*.class
+
+elysiumj/core/target
+elysiumj/tools/target
+elysium-wallet/integration-android/target
+elysium-wallet/wallet/target

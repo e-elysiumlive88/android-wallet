@@ -181,10 +181,6 @@ public final class BlockListFragment extends SherlockListFragment implements Loa
 			return true;
 		}
 
-
-
-
-
 		public View getView(final int position, View row, final ViewGroup parent)
 		{
 			if (row == null)
@@ -196,7 +192,8 @@ public final class BlockListFragment extends SherlockListFragment implements Loa
 			//
 try
 {
-			if(header.getDifficultyTargetAsInteger().toString().equals("0")) return row;
+
+if(header.getTime().getYear() == 69) return row;
 }
 catch(Exception ex)
 {}

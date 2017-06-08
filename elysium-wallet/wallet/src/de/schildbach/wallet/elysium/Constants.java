@@ -128,6 +128,7 @@ public class Constants
 	public static final String PREFS_KEY_CONNECTIVITY_NOTIFICATION = "connectivity_notification";
 	public static final String PREFS_KEY_SELECTED_ADDRESS = "selected_address";
 	public static final String PREFS_KEY_EXCHANGE_CURRENCY = "exchange_currency";
+public static final String PREFS_KEY_PIN_CODE = "pin_code";
     public static final String PREFS_KEY_TRUSTED_PEER = "trusted_peer";
     public static final String PREFS_KEY_TRUSTED_PEER_PORT = "trusted_peer_port";
 	public static final String PREFS_KEY_TRUSTED_PEER_ONLY = "trusted_peer_only";

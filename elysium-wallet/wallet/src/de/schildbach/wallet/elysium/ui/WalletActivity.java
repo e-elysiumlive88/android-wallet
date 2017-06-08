@@ -57,6 +57,7 @@ import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.text.InputType;
 import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.View;
@@ -105,6 +106,10 @@ public final class WalletActivity extends AbstractWalletActivity
 	private Wallet wallet;
 	private SharedPreferences prefs;
 
+public String m_Text = "";
+public String pinCode = "";
+public AlertDialog.Builder builder;
+
 	@Override
 	protected void onCreate(final Bundle savedInstanceState)
 	{
@@ -116,12 +121,57 @@ public final class WalletActivity extends AbstractWalletActivity
 
 		setContentView(R.layout.wallet_content);
 
+		checkPinCode();		
+
 		checkAlerts();
 
 		touchLastUsed();
 
         	//checkUpdateNotify();
 	}
+
+private void checkPinCode()
+{
+	pinCode = prefs.getString(Constants.PREFS_KEY_PIN_CODE, "").trim();
+        
+        if(pinCode.length() > 0)
+                {
+
+                        builder = new AlertDialog.Builder(this);
+                        builder.setTitle("Pin code");
+			builder.setCancelable(false);
+
+                        final EditText input = new EditText(this);
+                        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                        builder.setView(input);
+
+                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                        m_Text = input.getText().toString();
+
+                                        if(!m_Text.equals(pinCode)) checkPinCode();
+
+                                }
+                        });
+                        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                        dialog.cancel();
+
+                                        moveTaskToBack(true);
+                                        android.os.Process.killProcess(android.os.Process.myPid());
+                                        System.exit(1);
+
+                                }
+                        });
+
+                                builder.show();
+
+                }
+
+}
+	
 
     /* Pops dialogs to guide the user to update */
     private void checkUpdateNotify() {
@@ -731,7 +781,7 @@ public final class WalletActivity extends AbstractWalletActivity
 				}
 			};
 
-			dialog.show();
+			//dialog.show();
 		}
 	}
 

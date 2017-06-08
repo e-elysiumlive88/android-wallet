@@ -1175,15 +1175,15 @@ containing a value of this type.
         public static int coins_received=0x7f050000;
     }
     public static final class string {
-        public static int about_author_googleplus_title=0x7f0b00ca;
-        public static int about_author_twitter_title=0x7f0b00c9;
-        public static int about_credits_elysiumj_title=0x7f0b00c6;
-        public static int about_credits_icon_title=0x7f0b00c8;
-        public static int about_credits_market_app_title=0x7f0b00cb;
-        public static int about_credits_market_publisher_title=0x7f0b00cc;
-        public static int about_credits_zxing_title=0x7f0b00c7;
-        public static int about_license_title=0x7f0b00c5;
-        public static int about_title=0x7f0b00c4;
+        public static int about_author_googleplus_title=0x7f0b00cc;
+        public static int about_author_twitter_title=0x7f0b00cb;
+        public static int about_credits_elysiumj_title=0x7f0b00c8;
+        public static int about_credits_icon_title=0x7f0b00ca;
+        public static int about_credits_market_app_title=0x7f0b00cd;
+        public static int about_credits_market_publisher_title=0x7f0b00ce;
+        public static int about_credits_zxing_title=0x7f0b00c9;
+        public static int about_license_title=0x7f0b00c7;
+        public static int about_title=0x7f0b00c6;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static int abs__action_bar_home_description=0x7f0b0000;
@@ -1228,12 +1228,12 @@ containing a value of this type.
         public static int address_book_options_copy_from_clipboard_msg_empty=0x7f0b0082;
         public static int address_book_options_paste_from_clipboard_title=0x7f0b0081;
         public static int address_book_options_scan_title=0x7f0b0083;
-        public static int address_unlabeled=0x7f0b00de;
+        public static int address_unlabeled=0x7f0b00e0;
         public static int amount_calculator_dialog_button_use=0x7f0b009d;
         public static int amount_calculator_dialog_exchange_rate=0x7f0b009e;
         public static int amount_calculator_dialog_exchange_rate_not_available=0x7f0b009f;
         public static int amount_calculator_dialog_title=0x7f0b009c;
-        public static int app_name=0x7f0b00e5;
+        public static int app_name=0x7f0b00e7;
         public static int block_explorer_activity_title=0x7f0b00a3;
         public static int blockchain_state_disclaimer=0x7f0b000b;
         public static int blockchain_state_progress_days=0x7f0b000d;
@@ -1246,10 +1246,10 @@ containing a value of this type.
         public static int blockchain_state_progress_stalled=0x7f0b0011;
         public static int blockchain_state_progress_weeks=0x7f0b000e;
         public static int blockchain_state_replaying=0x7f0b0015;
-        public static int button_add=0x7f0b00d3;
-        public static int button_cancel=0x7f0b00d1;
-        public static int button_copy=0x7f0b00d6;
-        public static int button_delete=0x7f0b00d4;
+        public static int button_add=0x7f0b00d5;
+        public static int button_cancel=0x7f0b00d3;
+        public static int button_copy=0x7f0b00d8;
+        public static int button_delete=0x7f0b00d6;
         /**  generic buttons 
  generic buttons 
  generic buttons 
@@ -1261,22 +1261,22 @@ containing a value of this type.
  generic buttons 
  generic buttons 
          */
-        public static int button_dismiss=0x7f0b00d0;
-        public static int button_edit=0x7f0b00d5;
-        public static int button_edit_address=0x7f0b00dc;
-        public static int button_help=0x7f0b00d2;
-        public static int button_import_into_new_app=0x7f0b00e2;
-        public static int button_install_new_app=0x7f0b00e1;
+        public static int button_dismiss=0x7f0b00d2;
+        public static int button_edit=0x7f0b00d7;
+        public static int button_edit_address=0x7f0b00de;
+        public static int button_help=0x7f0b00d4;
+        public static int button_import_into_new_app=0x7f0b00e4;
+        public static int button_install_new_app=0x7f0b00e3;
         /**  generic buttons 
  generic buttons 
  generic buttons 
          */
-        public static int button_ok=0x7f0b00cf;
-        public static int button_paste=0x7f0b00d7;
-        public static int button_request_coins=0x7f0b00da;
-        public static int button_send_coins=0x7f0b00db;
-        public static int button_set_as_default=0x7f0b00d9;
-        public static int button_share=0x7f0b00d8;
+        public static int button_ok=0x7f0b00d1;
+        public static int button_paste=0x7f0b00d9;
+        public static int button_request_coins=0x7f0b00dc;
+        public static int button_send_coins=0x7f0b00dd;
+        public static int button_set_as_default=0x7f0b00db;
+        public static int button_share=0x7f0b00da;
         public static int edit_address_book_entry_dialog_address_label=0x7f0b0086;
         public static int edit_address_book_entry_dialog_button_edit=0x7f0b0088;
         public static int edit_address_book_entry_dialog_label_label=0x7f0b0087;
@@ -1289,8 +1289,8 @@ containing a value of this type.
         public static int exchange_rates_fragment_empty_text=0x7f0b001b;
         public static int exchange_rates_fragment_rate=0x7f0b001d;
         public static int exchange_rates_fragment_source=0x7f0b001f;
-        public static int notification_coins_received_msg=0x7f0b00cd;
-        public static int notification_peers_connected_msg=0x7f0b00ce;
+        public static int notification_coins_received_msg=0x7f0b00cf;
+        public static int notification_peers_connected_msg=0x7f0b00d0;
         public static int peer_list_fragment_empty=0x7f0b00a1;
         public static int peer_list_row_ping_time=0x7f0b00a2;
         public static int peer_monitor_activity_title=0x7f0b00a0;
@@ -1302,28 +1302,30 @@ containing a value of this type.
         public static int preferences_category_main=0x7f0b00a7;
         public static int preferences_connectivity_notification_summary=0x7f0b00ad;
         public static int preferences_connectivity_notification_title=0x7f0b00ac;
-        public static int preferences_initiate_reset_dialog_message=0x7f0b00b8;
-        public static int preferences_initiate_reset_dialog_positive=0x7f0b00b9;
-        public static int preferences_initiate_reset_summary=0x7f0b00b7;
-        public static int preferences_initiate_reset_title=0x7f0b00b6;
-        public static int preferences_report_issue_summary=0x7f0b00b5;
-        public static int preferences_report_issue_title=0x7f0b00b4;
-        public static int preferences_trusted_peer_only_summary=0x7f0b00b1;
-        public static int preferences_trusted_peer_only_title=0x7f0b00b0;
-        public static int preferences_trusted_peer_port_summary=0x7f0b00b3;
-        public static int preferences_trusted_peer_port_title=0x7f0b00b2;
-        public static int preferences_trusted_peer_summary=0x7f0b00af;
-        public static int preferences_trusted_peer_title=0x7f0b00ae;
-        public static int report_issue_dialog_collect_application_log=0x7f0b00c1;
-        public static int report_issue_dialog_collect_device_info=0x7f0b00c0;
-        public static int report_issue_dialog_collect_wallet_dump=0x7f0b00c2;
-        public static int report_issue_dialog_description=0x7f0b00be;
-        public static int report_issue_dialog_mail_intent_chooser=0x7f0b00c3;
-        public static int report_issue_dialog_message_crash=0x7f0b00bd;
-        public static int report_issue_dialog_message_issue=0x7f0b00bc;
-        public static int report_issue_dialog_report=0x7f0b00bf;
-        public static int report_issue_dialog_title_crash=0x7f0b00bb;
-        public static int report_issue_dialog_title_issue=0x7f0b00ba;
+        public static int preferences_initiate_reset_dialog_message=0x7f0b00ba;
+        public static int preferences_initiate_reset_dialog_positive=0x7f0b00bb;
+        public static int preferences_initiate_reset_summary=0x7f0b00b9;
+        public static int preferences_initiate_reset_title=0x7f0b00b8;
+        public static int preferences_pin_code_summary=0x7f0b00af;
+        public static int preferences_pin_code_title=0x7f0b00ae;
+        public static int preferences_report_issue_summary=0x7f0b00b7;
+        public static int preferences_report_issue_title=0x7f0b00b6;
+        public static int preferences_trusted_peer_only_summary=0x7f0b00b3;
+        public static int preferences_trusted_peer_only_title=0x7f0b00b2;
+        public static int preferences_trusted_peer_port_summary=0x7f0b00b5;
+        public static int preferences_trusted_peer_port_title=0x7f0b00b4;
+        public static int preferences_trusted_peer_summary=0x7f0b00b1;
+        public static int preferences_trusted_peer_title=0x7f0b00b0;
+        public static int report_issue_dialog_collect_application_log=0x7f0b00c3;
+        public static int report_issue_dialog_collect_device_info=0x7f0b00c2;
+        public static int report_issue_dialog_collect_wallet_dump=0x7f0b00c4;
+        public static int report_issue_dialog_description=0x7f0b00c0;
+        public static int report_issue_dialog_mail_intent_chooser=0x7f0b00c5;
+        public static int report_issue_dialog_message_crash=0x7f0b00bf;
+        public static int report_issue_dialog_message_issue=0x7f0b00be;
+        public static int report_issue_dialog_report=0x7f0b00c1;
+        public static int report_issue_dialog_title_crash=0x7f0b00bd;
+        public static int report_issue_dialog_title_issue=0x7f0b00bc;
         public static int request_coins_activity_title=0x7f0b006d;
         public static int request_coins_clipboard_msg=0x7f0b0073;
         public static int request_coins_fragment_address_label=0x7f0b006e;
@@ -1364,9 +1366,9 @@ containing a value of this type.
         public static int send_coins_sending_msg=0x7f0b0061;
         public static int send_coins_sent_msg=0x7f0b0062;
         public static int send_coins_uri_parse_error_title=0x7f0b0051;
-        public static int symbol_from=0x7f0b00e4;
-        public static int symbol_to=0x7f0b00e3;
-        public static int time_today=0x7f0b00dd;
+        public static int symbol_from=0x7f0b00e6;
+        public static int symbol_to=0x7f0b00e5;
+        public static int time_today=0x7f0b00df;
         public static int toast_wallet_reset=0x7f0b000a;
         public static int transaction_activity_title=0x7f0b0089;
         public static int transaction_fragment_amount_received_label=0x7f0b008c;
@@ -1387,8 +1389,8 @@ containing a value of this type.
         public static int transaction_row_message_received_dead=0x7f0b009b;
         public static int transaction_row_message_received_unconfirmed_locked=0x7f0b009a;
         public static int transaction_row_message_received_unconfirmed_unlocked=0x7f0b0099;
-        public static int under_construction=0x7f0b00df;
-        public static int update_dialog_message_1=0x7f0b00e0;
+        public static int under_construction=0x7f0b00e1;
+        public static int update_dialog_message_1=0x7f0b00e2;
         public static int wallet_address_fragment_clipboard_msg=0x7f0b0017;
         public static int wallet_address_fragment_your=0x7f0b0016;
         public static int wallet_addresses_fragment_add_dialog_message=0x7f0b0019;

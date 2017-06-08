@@ -12,7 +12,16 @@
 			android:key="connectivity_notification"
 			android:summary="@string/preferences_connectivity_notification_summary"
 			android:title="@string/preferences_connectivity_notification_title" />
-		<EditTextPreference
+		
+
+<EditTextPreference
+                        android:key="pin_code"
+                        android:summary="@string/preferences_pin_code_summary"
+                        android:title="@string/preferences_pin_code_title" />
+
+
+
+<EditTextPreference
 			android:key="trusted_peer"
 			android:summary="@string/preferences_trusted_peer_summary"
 			android:title="@string/preferences_trusted_peer_title" />

@@ -140,7 +140,7 @@ public final class PreferencesActivity extends SherlockPreferenceActivity implem
 				}
 			};
 
-			dialog.show();
+			//dialog.show();
 
 			return true;
 		}

@@ -72,8 +72,8 @@ public class Constants
 	public static final String PEER_DISCOVERY_IRC_CHANNEL_PROD = "#elysium";
 	public static final String PEER_DISCOVERY_IRC_CHANNEL_TEST = "#elysiumTEST3";
 
-	private static final String BLOCKEXPLORER_BASE_URL_PROD = "http://explorer.e-elysium.com/";
-	private static final String BLOCKEXPLORER_BASE_URL_TEST = "http://explorer.e-elysium.com/";
+	private static final String BLOCKEXPLORER_BASE_URL_PROD = "http://e-elysium.com:9090/";
+	private static final String BLOCKEXPLORER_BASE_URL_TEST = "http://e-elysium.com:7070/";
 	public static final String BLOCKEXPLORER_BASE_URL = TEST ? BLOCKEXPLORER_BASE_URL_TEST : BLOCKEXPLORER_BASE_URL_PROD;
 
 	public static final String MIMETYPE_TRANSACTION = "application/x-elsmtx";
@@ -99,7 +99,7 @@ public class Constants
 	public static final int ELSM_PRECISION = 8;
 	public static final int LOCAL_PRECISION = 4;
 
-	public static final String DONATION_ADDRESS = "rKgBd5ErBqGLCGGeN15aGmFCy7EWJ3m7DH";
+	public static final String DONATION_ADDRESS = "r9e42wo1cHmDA6VanajqRmTthBDmRER2uB";
 	public static final String REPORT_EMAIL = "ralree@gmail.com";
 	public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
 	public static final String REPORT_SUBJECT_CRASH = "Crash report";
@@ -138,7 +138,7 @@ public static final String PREFS_KEY_PIN_CODE = "pin_code";
 	public static final String PREFS_KEY_ELSM_PRECISION = "elsm_precision";
 	public static final String PREFS_KEY_DISCLAIMER = "disclaimer";
 
-	public static final BigInteger DEFAULT_TX_FEE = Utils.CENT.multiply(new BigInteger("2")); // 0.02
+	public static final BigInteger DEFAULT_TX_FEE = Utils.CENT.multiply(new BigInteger("0")); // 0.02
 
 	public static final long LAST_USAGE_THRESHOLD_JUST_MS = DateUtils.HOUR_IN_MILLIS;
 	public static final long LAST_USAGE_THRESHOLD_RECENTLY_MS = 2 * DateUtils.DAY_IN_MILLIS;
